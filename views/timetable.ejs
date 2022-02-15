@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <%- include('includes/head') %>
+</head>
+<body>
+    <div class="wrapper"> 
+        <%- include('includes/aside') %>
+          
+        <main class="main"> 
+            <%- include('includes/header', { user }) %>  
+
+            <section class="page-name container">
+                <span class="page-name__title">Расписание для группы: </span> 
+                <input class="input js-group" data-title="text" type="text" value="<%- user.group || null %>">
+                 
+            </section> 
+
+            <section class="timetable-params container">
+                <div class="timetable-arrows">
+                    <img class="js-left-arrow" src="./img/left-arrow.png" alt="arrow">
+                    <span class="js-week-text"></span>
+                    <img class="js-right-arrow" src="./img/right-arrow.png" alt="arrow">
+                </div>
+                <input type="week" name="calendar" class="js-calendar"> 
+            </section> 
+            
+            <section class="content container"> 
+                <div class="timetable">  
+ 
+                </div> 
+            </section>
+
+            <%- include('includes/footer') %>
+        </main>  
+    </div> 
+    <%- include('includes/modalTimeTable') %>
+
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/timetable.js"></script>
+     
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+      "compilerOptions": {
+        "types": [],
+          "target": "es6",
+          "removeComments": true,
+          "outDir": "public/built"
+      },
+      "exclude":[ 
+          "node_modules/**/*"
+      ],
+    "include": [ "ts/**/*" ]
+  }

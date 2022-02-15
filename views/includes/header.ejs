@@ -1,0 +1,18 @@
+<header class="header container">
+                 
+    <ul class="links"> 
+        <li class="links__link menu-burger"><img src="./img/burger.png" alt="menu-burger"></li>
+        <li class="links__link"><a href="#">Официальный сайт Академии</a></li>
+        <li class="links__link"><a href="#">Корпоративный портал Академии</a></li>
+    </ul>
+
+     
+    <div class="user-info">
+        <% if (user) { %>
+            <img src="./img/user.svg" alt="user-photo">
+            <p class="user-info__name"><%- user.name %></p>
+            <img src="./img/arrow.svg" alt="arrows" class="user-info__arrows">
+        <% } %>
+    </div>
+</header>
+ 

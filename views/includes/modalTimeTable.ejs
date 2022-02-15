@@ -1,0 +1,44 @@
+<div class="modal">
+    <div class="modal__wrapper">
+        <div class="modal__title js-modal-buttons">
+          <div class="button" data-value="1">Заметки</div>
+          <div class="button" data-value="2">Создать</div>
+          <span class="modal__close">X</span>
+        </div>
+    
+        <h4 class="modal__date">data</h4>
+    
+        <div class="modal__body js-modal-tabs"> 
+          <div class="col tab tab--1 active js-modal-items"> 
+     
+          </div>
+    
+          <div class="tab tab--2 js-modal-timetable-edit">
+            <div class="edit">
+              <div class="edit__item col">
+                <p>Название заметки</p>
+                <input name="title" placeholder="Название заметки">
+              </div>
+              <div class="edit__item col">
+                <p>Предмет</p>
+                <select name="link">
+                  <option value="Математика">Математика</option>
+                </select> 
+              </div>
+              <div class="edit__item col">
+                <p>Описание заметки</p>
+                <textarea name="desc" rows="2" placeholder="Название предмета"></textarea>
+              </div>
+              <div class="edit__item col">
+                <p>Выбор цвета обводки</p>
+                <input name="color" class="edit__color" type="color" placeholder="Цвет">
+              </div>
+              
+              <div class="edit__btn">
+                <button>Добавить заметку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

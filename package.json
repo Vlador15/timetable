@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "sass": "npx node-sass --include-path node_modules --output-style compressed public/scss/styles.scss > public/css/styles.css",
+    "sass:watch": "npx node-sass --watch --include-path node_modules --output-style compressed public/scss/styles.scss > public/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dbffile": "^1.7.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.9",
+    "node-dbf": "^0.4.0",
+    "node-horseman": "^3.3.0",
+    "pg": "^8.7.1",
+    "phantomjs": "^2.1.7",
+    "vk-io": "^4.4.0"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  }
+}

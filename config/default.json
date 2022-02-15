@@ -1,0 +1,8 @@
+{
+  "port" : 5001,  
+  "secretKey": "secket-key-spectradev",  
+  "database": "", 
+	"token_page": "",
+  "group_id": 111111,
+  "m_group_id": -111111 
+}

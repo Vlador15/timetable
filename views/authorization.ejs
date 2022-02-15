@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <%- include('includes/head') %>
+</head>
+<body>
+    <div class="wrapper">  
+        <main class="main"> 
+            <%- include('includes/header', { user }) %>
+ 
+
+            <section class="page-name container">
+                <h6>Аутентификация</h6>
+            </section>
+ 
+            <section class="content container"> 
+                <div class="content__wrapper">
+                    <div class="authorization auth"> 
+                    
+                        <div class="auth__header">
+                            <a href="/registration" class="auth__link">Регистрация</a>
+                            <a href="/authorization" class="auth__link auth__link-active">Авторизация</a>
+                        </div>
+    
+                        <div class="auth__body">
+                            <input type="text" class="auth__item" name="login" placeholder="Логин">
+                            <input type="text" class="auth__item" name="password" placeholder="Пароль"> 
+     
+                            <button type="button" class="auth__item auth__btn js-authorization">Войти</button>
+                        </div> 
+                    </div> 
+                </div>
+            </section>
+
+            <%- include('includes/footer') %>
+        </main> 
+
+    </div> 
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
